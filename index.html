@@ -358,7 +358,7 @@
                             <h2 class="font-gaming text-2xl font-bold tracking-wide">YAPI BLOKLARI</h2>
                         </div>
                         <span class="text-xs text-iron font-semibold bg-slate-800 border border-slate-700 px-2.5 py-1 rounded-lg">
-                            🪙 Odun & Taş: 2 Demir / Adet | Diğer Bloklar: 1 Demir / Adet
+                            🪙 Odun: 2 Demir / Adet | Diğer Bloklar: 1 Demir / Adet
                         </span>
                     </div>
 
@@ -436,25 +436,97 @@
                             </div>
                         </div>
 
-                        <!-- Kırıktaş / Taş (2 Demir / Adet) -->
+                        <!-- Kırıktaş / Taş (1 Demir / Adet) -->
                         <div class="glass-card rounded-2xl p-4 transition-all flex flex-col justify-between">
                             <div>
                                 <div class="w-full h-28 bg-slate-900/80 rounded-xl mb-3 flex items-center justify-center border border-slate-800 relative">
                                     <i class="fa-solid fa-cubes-stacked text-5xl text-slate-400 hover:scale-110 transition-transform"></i>
-                                    <span class="absolute top-2 right-2 bg-slate-800 text-[10px] font-bold text-iron px-2 py-0.5 rounded-md border border-slate-700">1 Tanesi = 2 Demir</span>
+                                    <span class="absolute top-2 right-2 bg-slate-800 text-[10px] font-bold text-iron px-2 py-0.5 rounded-md border border-slate-700">1 Tanesi = 1 Demir</span>
                                 </div>
                                 <h3 class="font-bold text-lg text-slate-100">Kırıktaş / Taş</h3>
                             </div>
                             <div>
                                 <div class="bg-slate-900/90 p-2.5 rounded-xl mb-3 border border-slate-800 flex items-center justify-between">
                                     <label class="text-xs font-semibold text-slate-300">Özel Adet:</label>
-                                    <input type="number" id="qty-tas" min="1" max="1000" value="1" oninput="updateBlockUnitPrice('tas', 2)" class="w-20 bg-slate-800 border border-slate-700 rounded-lg text-xs font-bold text-center text-white py-1">
+                                    <input type="number" id="qty-tas" min="1" max="1000" value="1" oninput="updateBlockUnitPrice('tas', 1)" class="w-20 bg-slate-800 border border-slate-700 rounded-lg text-xs font-bold text-center text-white py-1">
                                 </div>
                                 <div class="flex items-center justify-between text-xs mb-3 px-1">
                                     <span class="text-slate-400">Tutar:</span>
-                                    <span id="price-tas" class="font-bold text-iron">2 Demir</span>
+                                    <span id="price-tas" class="font-bold text-iron">1 Demir</span>
                                 </div>
-                                <button onclick="addBlockUnitPriceToCart('Kırıktaş / Taş', 'qty-tas', 2)" class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 font-semibold py-2 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
+                                <button onclick="addBlockUnitPriceToCart('Kırıktaş / Taş', 'qty-tas', 1)" class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 font-semibold py-2 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
+                                    <i class="fa-solid fa-cart-plus"></i> Sepete Ekle
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Toprak (1 Demir / Adet) -->
+                        <div class="glass-card rounded-2xl p-4 transition-all flex flex-col justify-between">
+                            <div>
+                                <div class="w-full h-28 bg-slate-900/80 rounded-xl mb-3 flex items-center justify-center border border-slate-800 relative">
+                                    <i class="fa-solid fa-mountain text-5xl text-amber-700 hover:scale-110 transition-transform"></i>
+                                    <span class="absolute top-2 right-2 bg-slate-800 text-[10px] font-bold text-iron px-2 py-0.5 rounded-md border border-slate-700">1 Tanesi = 1 Demir</span>
+                                </div>
+                                <h3 class="font-bold text-lg text-slate-100">Toprak</h3>
+                            </div>
+                            <div>
+                                <div class="bg-slate-900/90 p-2.5 rounded-xl mb-3 border border-slate-800 flex items-center justify-between">
+                                    <label class="text-xs font-semibold text-slate-300">Özel Adet:</label>
+                                    <input type="number" id="qty-toprak" min="1" max="1000" value="1" oninput="updateBlockUnitPrice('toprak', 1)" class="w-20 bg-slate-800 border border-slate-700 rounded-lg text-xs font-bold text-center text-white py-1">
+                                </div>
+                                <div class="flex items-center justify-between text-xs mb-3 px-1">
+                                    <span class="text-slate-400">Tutar:</span>
+                                    <span id="price-toprak" class="font-bold text-iron">1 Demir</span>
+                                </div>
+                                <button onclick="addBlockUnitPriceToCart('Toprak', 'qty-toprak', 1)" class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 font-semibold py-2 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
+                                    <i class="fa-solid fa-cart-plus"></i> Sepete Ekle
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- İnce Cam (1 Demir / Adet) -->
+                        <div class="glass-card rounded-2xl p-4 transition-all flex flex-col justify-between">
+                            <div>
+                                <div class="w-full h-28 bg-slate-900/80 rounded-xl mb-3 flex items-center justify-center border border-slate-800 relative">
+                                    <i class="fa-solid fa-window-maximize text-5xl text-sky-300 hover:scale-110 transition-transform"></i>
+                                    <span class="absolute top-2 right-2 bg-slate-800 text-[10px] font-bold text-iron px-2 py-0.5 rounded-md border border-slate-700">1 Tanesi = 1 Demir</span>
+                                </div>
+                                <h3 class="font-bold text-lg text-slate-100">İnce Cam</h3>
+                            </div>
+                            <div>
+                                <div class="bg-slate-900/90 p-2.5 rounded-xl mb-3 border border-slate-800 flex items-center justify-between">
+                                    <label class="text-xs font-semibold text-slate-300">Özel Adet:</label>
+                                    <input type="number" id="qty-cam" min="1" max="1000" value="1" oninput="updateBlockUnitPrice('cam', 1)" class="w-20 bg-slate-800 border border-slate-700 rounded-lg text-xs font-bold text-center text-white py-1">
+                                </div>
+                                <div class="flex items-center justify-between text-xs mb-3 px-1">
+                                    <span class="text-slate-400">Tutar:</span>
+                                    <span id="price-cam" class="font-bold text-iron">1 Demir</span>
+                                </div>
+                                <button onclick="addBlockUnitPriceToCart('İnce Cam', 'qty-cam', 1)" class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 font-semibold py-2 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
+                                    <i class="fa-solid fa-cart-plus"></i> Sepete Ekle
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Kemik Tozu (1 Demir / Adet) -->
+                        <div class="glass-card rounded-2xl p-4 transition-all flex flex-col justify-between">
+                            <div>
+                                <div class="w-full h-28 bg-slate-900/80 rounded-xl mb-3 flex items-center justify-center border border-slate-800 relative">
+                                    <i class="fa-solid fa-bone text-5xl text-slate-200 hover:scale-110 transition-transform"></i>
+                                    <span class="absolute top-2 right-2 bg-slate-800 text-[10px] font-bold text-iron px-2 py-0.5 rounded-md border border-slate-700">1 Tanesi = 1 Demir</span>
+                                </div>
+                                <h3 class="font-bold text-lg text-slate-100">Kemik Tozu</h3>
+                            </div>
+                            <div>
+                                <div class="bg-slate-900/90 p-2.5 rounded-xl mb-3 border border-slate-800 flex items-center justify-between">
+                                    <label class="text-xs font-semibold text-slate-300">Özel Adet:</label>
+                                    <input type="number" id="qty-kemik" min="1" max="1000" value="1" oninput="updateBlockUnitPrice('kemik', 1)" class="w-20 bg-slate-800 border border-slate-700 rounded-lg text-xs font-bold text-center text-white py-1">
+                                </div>
+                                <div class="flex items-center justify-between text-xs mb-3 px-1">
+                                    <span class="text-slate-400">Tutar:</span>
+                                    <span id="price-kemik" class="font-bold text-iron">1 Demir</span>
+                                </div>
+                                <button onclick="addBlockUnitPriceToCart('Kemik Tozu', 'qty-kemik', 1)" class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-300 hover:text-white border border-blue-500/40 font-semibold py-2 rounded-xl transition-all flex items-center justify-center gap-2 text-sm">
                                     <i class="fa-solid fa-cart-plus"></i> Sepete Ekle
                                 </button>
                             </div>
